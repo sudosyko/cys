@@ -4,6 +4,8 @@
 # Date: 07.06.2024
 
 # Directory for storing output files
+apt install gobuster -y
+
 OUTPUT_DIR="00-scan"
 
 # Check if the scan directory exists
@@ -32,7 +34,7 @@ run_command() {
         echo "# Command used: $cmd"
         echo "# Output:"
         eval "$cmd"
-        echo "\n"
+        echo ""
     } >> "$outfile"
 }
 
