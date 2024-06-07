@@ -55,7 +55,7 @@ run_command "nmap -p- -T5 $TARGET" "$TCP_OUTPUT_FILE"
 run_command "nmap -sV $TARGET" "$TCP_OUTPUT_FILE"
 
 # UDP Scan save to UDP_OUTPUT_FILE
-run_command "nmap -sU $TARGET" "$UDP_OUTPUT_FILE"
+# run_command "nmap -sU $TARGET" "$UDP_OUTPUT_FILE"
 
 # Aggressive Scan save to AGGRESIVE_OUTPUT_FILE
 run_command "nmap -A $TARGET" "$AGGRESIVE_OUTPUT_FILE"
