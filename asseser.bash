@@ -32,7 +32,8 @@ run_command() {
         echo "# Command used: $cmd"
         echo "# Output:"
         eval "$cmd"
-    } > "$outfile"
+        echo "\n"
+    } >> "$outfile"
 }
 
 # Prompt the user to enter the target network
